@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Information about NFT</title>
+    <style>
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(45deg, #141E30, #243B55);
+    background-size: 1000% 1000%;
+    animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+    0%{
+    background-position: 0 50%;
+    }
+
+    50%{
+    background-position: 100% 50%;
+    }
+    
+    100%{
+    background-position: 0 50%;
+    }
+}
+</style>
+    <body>
+
+        <header style="width: 100%; display: flex;">
+            <div class="header_logo" style="text-transform: uppercase; font-weight: 800; font-size: 20px; cursor: pointer; margin-top: 20px; margin-left: 10%;"><p>
+                <a href="http://127.0.0.1:5000/" style="color: #fff; text-decoration: none;">NFT-ADDRESS</a></p></div>
+        </header>
+
+        <main style="display: flex; flex-direction: column; width: 100%;">
+            <div class="main_page" style="text-align: center; padding: 80px 0 60px 0;">
+                <h1 style="color: #fff; font-size: 50px;">Information about
+                    <span class="NFT_main" style="color: #227ba2; text-shadow: 3px 3px 2px #fff;">NFT</span></h1>
+            
+        <p style="color: #fff; font-size: 30px;">NFT name: <span style="color: #227ba2;"> {{nm}} </span></p>  
+        <p style="color: #fff; font-size: 30px;">NFT mint: <span style="color: #227ba2;"> {{mint}}</span></p>  
+        <p style="color: #fff; font-size: 30px;">All information about NFT: <a href={{imgurl}} style="color: #227ba2; text-decoration: none;">NFT LINK</a></p>
+        </div>
+    </main>
+</body>
+</html>

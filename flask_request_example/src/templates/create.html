@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskApp Main Page</title>
+    <style>
+    body{
+        font-family: 'Open Sans', sans-serif;
+        background: linear-gradient(45deg, #141E30, #243B55);
+        background-size: 400% 400%;
+        animation: gradient 8s ease infinite;
+    }
+
+@keyframes gradient {
+    0%{
+    background-position: 0 50%;
+    }
+
+    50%{
+    background-position: 100% 50%;
+    }
+    
+    100%{
+    background-position: 0 50%;
+    }
+}
+    </style>
+    <body>
+        <header style="width: 100%; display: flex;">
+            <div class="header_logo" style="text-transform: uppercase; color: #fff; font-weight: 800; font-size: 20px;
+            cursor: pointer; margin-top: 20px; margin-left: 10%;"><p>
+                <a href="http://127.0.0.1:5000/" style="color: #fff; text-decoration: none;">NFT-ADDRESS</a></p></div>
+        </header>
+
+
+
+    <main style="display: flex; flex-direction: column; width: 100%;">
+        <div class="main_page" style="text-align: center; padding: 120px 0 50px 0;">
+            <h1 style="color: #fff; font-size: 50px;">Find information about 
+                <span class="NFT_main" style="color: #2a5298; text-shadow: 3px 3px 2px #fff;">NFT</span></h1>
+
+        <form method="get" action="/nft" >
+        <div class="search-box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, 50%); background: #fff; height: 40px; border-radius: 30px; padding: 10px;" >
+        <input enctype="multipart/form-data" class="search-txt" type="text" name='nftaddr' placeholder="Type NFT-ADDRESS:" style="border: none;
+            outline: none; margin-left: 8px; color: #000; font-size: 16px; line-height: 40px; width: 400px;"> 
+        <p><button type="submit" name= "submit" value="Submit" style="background-color: #2a5298; border: none; color: white;
+            padding: 15px 32px; text-align: center; font-size: 16px; margin: 30px 20px; cursor: pointer; transition-duration: 0.4s; border-radius: 30px; 
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">Search</button></p>
+    </div>
+    </form>
+</main>
+</body>
+</html>
